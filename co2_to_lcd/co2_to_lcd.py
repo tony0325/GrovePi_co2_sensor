@@ -68,7 +68,7 @@ if __name__=="__main__":
     while True:
         try:
             while True:
-                cmd = ['sudo','python','/home/pi/SCD30/Raspi-Driver-SCD30/scd30-once.py'] 
+                cmd = ['sudo','python','./scd30-once.py'] 
                 try:
                     out = subprocess.check_output(cmd)
                     split_out = re.split(' |\n',out)
